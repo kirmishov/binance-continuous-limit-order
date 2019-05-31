@@ -36,18 +36,11 @@ class LimitOrder():
             print('ERROR: {}'.format(e))
         except ccxt.ExchangeError as e:
             # print('ERROR: {}'.format(e))
-            print ("Market doesn't exist yet")
+            print ("{} Market doesn't exist yet".format(datetime.now()), end="\r")
 
-    def print_status(self):
-        print("---------------------")
-        print (datetime.now())
-        print("Order type: %s" % self.type)
-        print("Market: %s" % self.market)
-        print("---------------------")
 
     def run(self):
         self.running = True
         while (self.running):
-            self.print_status()
             self.update()
             # time.sleep(self.interval)
