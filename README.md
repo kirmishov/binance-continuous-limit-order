@@ -6,6 +6,7 @@ Works in buy mode only for now.
 ## Installation
 
 **Install required libraries**
+
 activate your virtualenv and then
 ```
 pip install -r requirements.txt
@@ -42,5 +43,7 @@ optional arguments:
 **Important note**
 
 Script will try to buy on your full available balance.
+
 You can run several instances of script for different markets, e.g. ONE/BTC ONE/USDT ONE/BNB.
+
 Trading levels for Harmony (ONE): https://wnbp.info/s/HarmonyToTheMoon
