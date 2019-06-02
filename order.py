@@ -21,6 +21,10 @@ class LimitOrder():
         print ('Balance available: {} {}'.format(self.balance, self.market.split("/")[1]))
 
     def update(self):
+        self.binance = Binance(
+            api_key=config.API_DETAILS['API_KEY'],
+            api_secret=config.API_DETAILS['API_SECRET']
+        )
         try:
             if self.type == "sell":
                 pass
